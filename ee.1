@@ -7,7 +7,7 @@
 .\"  $Header: /home/hugh/sources/old_ae/RCS/ee.1,v 1.22 2001/12/16 04:49:27 hugh Exp $
 .\"
 .\"
-.TH ee 1 "" "" "" ""
+.TH ee 1 "" "" ""
 .SH NAME
 ee \- easy editor
 .SH SYNOPSIS
@@ -329,8 +329,8 @@ A window showing the keyboard operations that can be performed can be
 displayed or not.
 .IP "\fBemacs keys\fR"
 Control keys may be given bindings similar to emacs, or not.
-.IP "\f16 bit characters\fR"
-Toggles whether sixteen bit characters are handled as one 16-bit quantities or 
+.IP "\fB16 bit characters\fR"
+Toggles whether sixteen bit characters are handled as one 16-bit quantity or 
 two 8-bit quantities.  This works primarily with the Chinese Big 5 code set.
 .RE
 .PP
@@ -406,7 +406,7 @@ cursor location.  The old information would have to be deleted by the user.
 .PP
 Since different users have different preferences, \fIee\fR allows some 
 slight configurability.  There are three possible locations for an 
-initialization file for ee:  the file \fI/usr/local/lib/init.ee\fR, the 
+initialization file for ee:  the file \fI/usr/share/misc/init.ee\fR, the 
 file \fI.init.ee\fR in the user's home directory, or the file \fI.init.ee\fR 
 in the current directory (if different from the home 
 directory).  This allows system administrators to set some preferences for 
@@ -414,7 +414,7 @@ the users on a system-wide basis (for example, the \fBprint\fR command),
 and the user to customize settings for particular directories (like one 
 for correspondence, and a different directory for programming).
 .PP
-The file \fI\/usr/local/lib/init.ee\fR is read first, then 
+The file \fI\/usr/share/misc/init.ee\fR is read first, then 
 \fI$HOME/.init.ee\fR, then \fI.init.ee\fR, with the settings specified by the 
 most recent file read taking precedence.
 .PP
@@ -461,7 +461,7 @@ Turns off display of eight bit characters (they are displayed as their decimal
 value inside angle brackets, e.g., "<220>").
 .IP \fB16bit\fR
 Turns on handling of 16-bit characters.
-.IP \fbno16bit\fR
+.IP \fBno16bit\fR
 Turns off handling of 16-bit characters.
 .IP \fBemacs\fR
 Turns on emacs key bindings.
@@ -521,7 +521,7 @@ The automatic paragraph formatting operation
 may be too slow for slower systems.
 .SH FILES
 .PP
-.I /usr/local/lib/init.ee
+.I /usr/share/misc/init.ee
 .br
 .I $HOME/.init.ee
 .br
